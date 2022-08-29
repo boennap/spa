@@ -1,0 +1,35 @@
+Deklaracija niza:
+tip_podatka[] nazivPromenljive;
+Nakon deklaracije, kreirana je promenljiva koja ce predstavljati pokazivac na niz. 
+Pre nego sto se odradi inicijalizacija, promenljiva ima vrednost null.
+
+Svi elementi jednog niza su uvek istog tipa.
+
+Da bi niz mogao da se koristi mora prvo da se inicijalizuje:
+nazivPromenljive = new tip_podataka[kapacitet_niza];
+Nakon inicijalizacije, alocirana je memorija gde ce se skladistiti niz.
+Promenljiva sada sadrzi adresu prvog elementa u nizu.
+Elementi dobijaju pocetne vrednosti u zavisnosti od tipa, 
+npr. elementi u nizu celih brojeva ce nakon inicijalizacije imati vrednost nula.
+
+kapacitet_niza mora biti nenegativan ceo broj i predstavlja maksimalan broj elemenata u nizu
+Jednom kada se odredi, kapacitet_niza se ne moze menjati.
+
+Niz se moze ponovo inicijalizovati, ali se time brisu njegovi elementi.
+
+Svaki element u nizu ima svoj indeks. Indeks elementa je ceo broj koji predstavlja redni broj elementa u nizu.
+Indeksi pocinju od nule, te je tako poslednji indeks u nizu gde je kapacitet_niza = n, zapravo n-1
+
+Pozivanje pojedinacnih elemenata niza uz pomoc indeksa: 
+nazivPromenljive[indeks]
+
+Ako je potrebno dobiti vrednost kapaciteta niza:
+nazivPromenljive.length
+
+Brza incijalizacija:
+(kada su unapred poznate vrednosti i potrebno je da kapacitet niza bude tacno onoliki koliko je vrednosti uneto)
+nazivPromenljive = {vrednost_1, vrednost_2, ..., vrednost_n};
+
+
+
+
